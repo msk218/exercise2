@@ -1,6 +1,6 @@
-# Class: execise1::disk_management::lvm
+# Class: execise2::disk_management::lvm
 #
 #
-class execise1::disk_management::lvm {
+class execise2::disk_management::lvm {
 	# resources
 }

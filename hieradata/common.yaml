@@ -1,7 +1,21 @@
-exercise1::packages:
+exercise2::packages:
   - 'vim'
   - 'epel-release'
   - 'bash-completion'
   - 'wget'
   - 'nmap'
   - 'nfs-utils'
+
+exercise2::users:
+    'Tra': 
+      ensure:     'present'
+      groups:     'Andrews_Group'
+      home:       '/home/Tra'
+      managehome: 'true'
+      name:       'Tra'
+    'Andrew': 
+      ensure:     'present'
+      groups:     'Andrews_Group'
+      home:       '/home/Andrew'
+      managehome: 'true'
+      name:       'Andrew'

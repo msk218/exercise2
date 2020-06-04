@@ -1,6 +1,7 @@
-# Class: exercise1
+# Class: exercise2
 #
 #
-class exercise1 {
-	include exercise1::packages
+class exercise2 {
+	include exercise2::packages
+	include exercise2::users
 }

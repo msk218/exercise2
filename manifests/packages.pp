@@ -1,7 +1,7 @@
-# Class: exercise1::packages
+# Class: exercise2::packages
 #
-class exercise1::packages {
-	$packages = lookup(exercise1:packages)
+class exercise2::packages {
+	$packages = lookup(exercise2::packages)
 	package { $packages:
 		ensure => installed,
 	}
