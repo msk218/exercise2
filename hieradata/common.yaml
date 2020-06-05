@@ -39,16 +39,16 @@ exercise2::physical_volume:
 
 exercise2::volume_group: 
     'exercisevg':
-      ensure:      present,
-      physical_volumes: '/dev/sdb1',
+      ensure:      'present'
+      physical_volumes: '/dev/sdb1'
 
 exercise2::logical_volume: 
   'exercise.fs':
-      ensure:      present,
-      volume_group: 'exercisevg',
-      size:       '8G',
+      ensure:      'present'
+      volume_group: 'exercisevg'
+      size:       '8G'
 
 exercise2::filesystem:
   '/dev/exercisevg/exercise.fs':
-      ensure:     present,
-      fs_type:    'xfs',
+      ensure:     'present'
+      fs_type:    'xfs'
