@@ -32,3 +32,23 @@ exercise2::users:
       name:       'Milton'
       uid:        1011
       password:   Sensitive("Milton")
+
+exercise2::physical_volume:
+    '/dev/sdb1':
+      ensure:      'present'
+
+exercise2::volume_group: 
+    'exercisevg':
+      ensure:      present,
+      physical_volumes: '/dev/sdb1',
+
+exercise2::logical_volume: 
+  'exercise.fs':
+      ensure:      present,
+      volume_group: 'exercisevg',
+      size:       '8G',
+
+exercise2::filesystem:
+  '/dev/exercisevg/exercise.fs':
+      ensure:     present,
+      fs_type:    'xfs',
