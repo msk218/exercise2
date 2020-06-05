@@ -5,6 +5,7 @@ exercise2::packages:
   - 'wget'
   - 'nmap'
   - 'nfs-utils'
+  - 'htop'
 
 exercise2::users:
     'Tra': 
@@ -13,9 +14,21 @@ exercise2::users:
       home:       '/home/Tra'
       managehome: 'true'
       name:       'Tra'
+      uid:        1010
+      password:   Sensitive("Tra")
     'Andrew': 
       ensure:     'present'
       groups:     'Andrews_Group'
       home:       '/home/Andrew'
       managehome: 'true'
       name:       'Andrew'
+      uid:        1009
+      password:   Sensitive("Andrew")
+    'Milton': 
+      ensure:     'present'
+      groups:     'Andrews_Group'
+      home:       '/home/Milton'
+      managehome: 'true'
+      name:       'Milton'
+      uid:        1011
+      password:   Sensitive("Milton")
