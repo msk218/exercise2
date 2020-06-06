@@ -3,6 +3,6 @@
 #
 class exercise2::time { 
 	class { 'timezone':
- 		 timezone => 'CDT',
+ 		 timezone => 'America/Chicago',
  		}
 	}

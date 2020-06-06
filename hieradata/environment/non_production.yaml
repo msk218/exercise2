@@ -1,0 +1,25 @@
+exercise2::users:
+    'Tra': 
+      ensure:     'present'
+      groups:     'Andrews_Group'
+      home:       '/home/Tra'
+      managehome: 'true'
+      name:       'Tra'
+      uid:        1010
+      password:   ("$6$yhpAYrU8$/Odh0XaBGhu1X4bIK5NX1kZO.Xd/I2Tw5xh.fGkLk/3m.ugx0RCYfl4CNDA0au3Hvyb.iQzFGgwwepvTMpekb1")
+    'Andrew': 
+      ensure:     'present'
+      groups:     'Andrews_Group'
+      home:       '/home/Andrew'
+      managehome: 'true'
+      name:       'Andrew'
+      uid:        1009
+      password:   ("$6$XkOP5XE1$UJ.enm9xqi4NJLWmwuBQx21rSV4SiVT8RRgKdrOniMZUgOXA6IbsQ3ZnZydaxUwW/Xso5MaV71YVkCBt7DGCK/")
+    'Milton': 
+      ensure:     'present'
+      groups:     'Andrews_Group'
+      home:       '/home/Milton'
+      managehome: 'true'
+      name:       'Milton'
+      uid:        1011
+      password:   ("$6$nCZLN0hK$4LLSldZehF3WiTkHEwNLvwtt7FtiIMkCQ6STt4Ltc/qMKZIY7tK0w2.wilu5hPagxRnNSZoLmwZbpKibpWMNm/")

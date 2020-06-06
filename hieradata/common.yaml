@@ -7,31 +7,7 @@ exercise2::packages:
   - 'nfs-utils'
   - 'htop'
 
-exercise2::users:
-    'Tra': 
-      ensure:     'present'
-      groups:     'Andrews_Group'
-      home:       '/home/Tra'
-      managehome: 'true'
-      name:       'Tra'
-      uid:        1010
-      password:   Sensitive("Tra")
-    'Andrew': 
-      ensure:     'present'
-      groups:     'Andrews_Group'
-      home:       '/home/Andrew'
-      managehome: 'true'
-      name:       'Andrew'
-      uid:        1009
-      password:   Sensitive("Andrew")
-    'Milton': 
-      ensure:     'present'
-      groups:     'Andrews_Group'
-      home:       '/home/Milton'
-      managehome: 'true'
-      name:       'Milton'
-      uid:        1011
-      password:   Sensitive("Milton")
+
 
 exercise2::physical_volume:
     '/dev/sdb1':
